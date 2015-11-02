@@ -14,6 +14,11 @@ import Foundation
 class TicTacToeEngine {
     var rawData: Array<Array<Int>>
     var currentPlayer = 0
+    var currentPlayerText: String {
+        get {
+            return "Player \(currentPlayer + 1)'s turn"
+        }
+    }
     
     func play(x: Int, y: Int) {
         // Change data

@@ -27,9 +27,10 @@ class TicTacToeEngineTests: XCTestCase {
         let defaultRow = Array(count: 3, repeatedValue: 0)
         let expectedData = Array(count: 3, repeatedValue: defaultRow)
         XCTAssertEqual( ticTacToeEngine.rawData, expectedData)
+        XCTAssertEqual( ticTacToeEngine.currentPlayerText, "Player 1's turn")
     }
     
-    func testExample() {
+    func testRawDataChangesOnPlays() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         ticTacToeEngine.play(0, y: 2)
@@ -43,6 +44,14 @@ class TicTacToeEngineTests: XCTestCase {
         ticTacToeEngine.play(2, y: 0)
         expectedData = [ [0, 0, 1], [0, 0, 2], [1, 0, 0] ]
         XCTAssertEqual( String(ticTacToeEngine.rawData), String(expectedData) )
+    }
+    
+    func testPlayerTextUpdates() {
+        XCTAssertEqual( ticTacToeEngine.currentPlayerText, "Player 1's turn")
+        ticTacToeEngine.play(0, y: 0)
+        XCTAssertEqual( ticTacToeEngine.currentPlayerText, "Player 2's turn")
+        ticTacToeEngine.play(1, y: 0)
+        XCTAssertEqual( ticTacToeEngine.currentPlayerText, "Player 1's turn")
     }
 
     func testPerformanceExample() {
