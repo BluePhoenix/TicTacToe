@@ -53,6 +53,16 @@ class TicTacToeEngineTests: XCTestCase {
         ticTacToeEngine.play(1, y: 0)
         XCTAssertEqual( ticTacToeEngine.currentPlayerText, "Player 1's turn")
     }
+    
+    func testSelectingSameCellIsNotValid() {
+        XCTAssertEqual( ticTacToeEngine.currentPlayerValue, 0)
+        ticTacToeEngine.play(0, y: 0)
+        XCTAssertEqual( ticTacToeEngine.currentPlayerValue, 1)
+        ticTacToeEngine.play(0, y: 0)
+        XCTAssertEqual( ticTacToeEngine.currentPlayerValue, 1)
+        ticTacToeEngine.play(1, y: 0)
+        XCTAssertNotEqual( ticTacToeEngine.currentPlayerValue, 1)
+    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

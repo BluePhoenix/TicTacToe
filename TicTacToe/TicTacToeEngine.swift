@@ -30,10 +30,13 @@ class TicTacToeEngine {
     }
     
     func play(x: Int, y: Int) {
-        // Change data
-        rawData[x][y] = (currentPlayer)
-        
-        endTurn()
+        // Only accept valid plays, cannot change the value of the same cell
+        if rawData[x][y] == 0 {
+            // Change data
+            rawData[x][y] = (currentPlayer)
+            
+            endTurn()
+        }
     }
     
     init() {
