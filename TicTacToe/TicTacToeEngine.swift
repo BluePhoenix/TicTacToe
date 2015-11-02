@@ -12,6 +12,8 @@ import Foundation
 // Since I am learning, I am implementing all this myself
 // However, a good alternative might be https://github.com/scottsievert/swix
 class TicTacToeEngine {
+
+    // MARK: Properties
     internal var rawData: Array<Array<Int>>
     internal var currentPlayerValue = 0
     var currentPlayer: Int {
@@ -26,6 +28,12 @@ class TicTacToeEngine {
         }
     }
     
+    // MARK: Methods
+    func endTurn() {
+        // Change player turn
+        currentPlayerValue = (currentPlayerValue+1) % 2
+    }
+    
     func play(x: Int, y: Int) {
         // Only accept valid plays, cannot change the value of the same cell
         if rawData[x][y] == 0 {
@@ -36,17 +44,26 @@ class TicTacToeEngine {
         }
     }
     
+    func reset() {
+        resetInternalData()
+    }
+    
     init() {
+        rawData = [[Int]]()
+        resetInternalData()
+    }
+    
+    // MARK: Helper functions
+    func resetInternalData() {
+        // Clear raw data
         rawData = [[Int]]()
         let emptyRow = [0, 0, 0]
         for var i = 0; i < 3; i++ {
             rawData.append(emptyRow)
         }
+        
+        // Reset default player
+        currentPlayerValue = 0
     }
     
-    // MARK: Helper functions
-    func endTurn() {
-        // Change player turn
-        currentPlayerValue = (currentPlayerValue+1) % 2
-    }
 }
