@@ -103,11 +103,38 @@ class TicTacToeEngineTests: XCTestCase {
 //        XCTAssertEqual( t.gameResult().message, "Player 1 wins")
 //    }
 
-    func testPerformanceExample() {
+    func testPerformanceForWinningData() {
         // This is an example of a performance test case.
         self.measureBlock {
             // Put the code you want to measure the time of here.
+            let t = self.ticTacToeEngine
+            t.rawData =
+                [
+                    [1, 0, 2],
+                    [1, 0, 0],
+                    [1, 0, 2]
+            ]
+            for var i = 0; i < 5000; i++ {
+                t.calculateGameState()
+            }
         }
     }
 
+    func testPerformanceForNonWinningData() {
+        // This is an example of a performance test case.
+        self.measureBlock {
+            // Put the code you want to measure the time of here.
+            let t = self.ticTacToeEngine
+            t.rawData =
+                [
+                    [1, 0, 2],
+                    [0, 1, 0],
+                    [1, 0, 2]
+            ]
+            for var i = 0; i < 5000; i++ {
+                t.calculateGameState()
+            }
+        }
+    }
+    
 }
