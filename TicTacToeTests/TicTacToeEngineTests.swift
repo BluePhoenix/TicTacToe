@@ -74,7 +74,34 @@ class TicTacToeEngineTests: XCTestCase {
         t.reset()
         XCTAssertEqual( String(t.rawData), String([ [0, 0, 0], [0, 0, 0], [0, 0, 0] ]) )
         XCTAssertEqual( t.currentPlayerValue, 0)
+        XCTAssertEqual( t.gameState, 0)
     }
+    
+    func testVictoryCondition() {
+        let t = ticTacToeEngine
+        t.rawData = [ [1, 0, 0], [0, 0, 0], [1, 0, 2] ]
+        XCTAssertEqual( t.calculateGameState(), 0 )
+        t.rawData =
+            [
+                [1, 0, 2],
+                [1, 0, 0],
+                [1, 0, 2]
+            ]
+        XCTAssertEqual( t.calculateGameState(), 1 )
+
+        t.rawData = [ [2, 0, 0], [1, 0, 1], [1, 0, 2] ]
+        XCTAssertEqual( t.calculateGameState(), 0 )
+    }
+    
+//    func testPlayerWins() {
+//        let t = ticTacToeEngine
+//        t.play(0, y: 2)
+//        t.play(1, y: 0)
+//        t.play(1, y: 1)
+//        t.play(1, y: 2)
+//        t.play(2, y: 0)
+//        XCTAssertEqual( t.gameResult().message, "Player 1 wins")
+//    }
 
     func testPerformanceExample() {
         // This is an example of a performance test case.

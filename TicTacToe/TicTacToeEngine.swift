@@ -28,10 +28,36 @@ class TicTacToeEngine {
         }
     }
     
+    // 0 - Currently playing
+    // 1 - Game won
+    // 2 - Game tied
+    var gameState: Int = 0
+    
     // MARK: Methods
+    func calculateGameState() -> Int {
+        
+        // For now, keeping this broken out
+        if checkVictoryOfPlayer(1) {
+            return 1
+        } else if checkVictoryOfPlayer(2) {
+            return 1
+        }
+        
+        return 0
+    }
+    
     func endTurn() {
         // Change player turn
         currentPlayerValue = (currentPlayerValue+1) % 2
+    }
+    
+    func gameResult() -> (state: Int, message: String) {
+        switch gameState {
+        case 1:
+            return (state: gameState, message: "Player \(currentPlayer) wins")
+        default:
+            return (state: gameState, message: "Currently playing")
+        }
     }
     
     func play(x: Int, y: Int) {
@@ -54,6 +80,53 @@ class TicTacToeEngine {
     }
     
     // MARK: Helper functions
+    func checkVictoryOfPlayer(playerValue: Int) -> Bool {
+        if rawData[0][0] == playerValue {
+            if rawData[0][1] == playerValue {
+                if rawData[0][2] == playerValue {
+                    return true
+                }
+            } else if rawData[1][0] == playerValue {
+                if rawData[2][0] == playerValue {
+                    return true
+                }
+            } else if  rawData[1][1] == playerValue {
+                if rawData[2][2] == playerValue {
+                    return true
+                }
+            }
+        } else if rawData[1][0] == playerValue {
+            if rawData[1][1] == playerValue {
+                if rawData[1][2] == playerValue {
+                    return true
+                }
+            }
+        } else if rawData[2][0] == playerValue {
+            if rawData[1][1] == playerValue {
+                if rawData[0][2] == playerValue {
+                    return true
+                }
+            } else if rawData[2][1] == playerValue {
+                if rawData[2][2] == playerValue {
+                    return true
+                }
+            }
+        } else if rawData[0][1] == playerValue {
+            if rawData[1][1] == playerValue {
+                if rawData[2][1] == playerValue {
+                    return true
+                }
+            }
+        } else if rawData[0][2] == playerValue {
+            if rawData[1][2] == playerValue {
+                if rawData[2][2] == playerValue {
+                    return true
+                }
+            }
+        }
+        return false
+    }
+    
     func resetInternalData() {
         // Clear raw data
         rawData = [[Int]]()
