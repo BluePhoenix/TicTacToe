@@ -28,6 +28,20 @@ class TicTacToeEngine {
         }
     }
     
+    var currentTurn: Int {
+        get {
+            var totalCount = 0
+            for row in rawData {
+                for cell in row {
+                    if cell != 0 {
+                        totalCount++
+                    }
+                }
+            }
+            return totalCount
+        }
+    }
+    
     // 0 - Currently playing
     // 1 - Game won
     // 2 - Game tied
@@ -39,11 +53,10 @@ class TicTacToeEngine {
     
     // MARK: Methods
     func calculateGameState() -> Int {
-        
-        // For now, keeping this broken out
-        if checkVictoryOfPlayer(1) {
-            return 1
-        } else if checkVictoryOfPlayer(2) {
+        if currentTurn >= 9 {
+            return 2
+        }
+        if checkVictoryOfPlayer(1) || checkVictoryOfPlayer(2) {
             return 1
         }
         
@@ -59,6 +72,8 @@ class TicTacToeEngine {
         switch gameState {
         case 1:
             return (state: gameState, message: "Player \(currentPlayer) wins")
+        case 2:
+            return (state: gameState, message: "Players tied")
         default:
             return (state: gameState, message: "Currently playing")
         }
@@ -88,6 +103,7 @@ class TicTacToeEngine {
     
     // MARK: Helper functions
     func checkVictoryOfPlayer(playerValue: Int) -> Bool {
+        // For now, keeping this broken out
         if rawData[0][0] == playerValue {
             if rawData[0][1] == playerValue {
                 if rawData[0][2] == playerValue {

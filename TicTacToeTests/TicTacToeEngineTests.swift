@@ -126,6 +126,38 @@ class TicTacToeEngineTests: XCTestCase {
         t.play(2, y: 0)
         XCTAssertEqual( t.gameResult().message, "Player 1 wins")
     }
+  
+    func testTurnCount() {
+        let t = ticTacToeEngine
+        t.play(1, y: 1)
+        XCTAssertEqual( t.currentTurn, 1)
+        t.play(1, y: 1)
+        XCTAssertEqual( t.currentTurn, 1)
+        t.play(0, y: 0)
+        t.play(2, y: 0)
+        t.play(0, y: 2)
+        t.play(0, y: 1)
+        t.play(2, y: 1)
+        t.play(1, y: 0)
+        t.play(1, y: 2)
+        t.play(2, y: 2)
+        XCTAssertEqual( t.currentTurn, 9)
+    }
+
+    
+    func testPlayersTied() {
+        let t = ticTacToeEngine
+        t.play(1, y: 1)
+        t.play(0, y: 0)
+        t.play(2, y: 0)
+        t.play(0, y: 2)
+        t.play(0, y: 1)
+        t.play(2, y: 1)
+        t.play(1, y: 0)
+        t.play(1, y: 2)
+        t.play(2, y: 2)
+        XCTAssertEqual( t.gameResult().message, "Players tied")
+    }
 
     func testPerformanceForWinningData() {
         // This is an example of a performance test case.
