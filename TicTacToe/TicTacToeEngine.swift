@@ -31,7 +31,11 @@ class TicTacToeEngine {
     // 0 - Currently playing
     // 1 - Game won
     // 2 - Game tied
-    var gameState: Int = 0
+    var gameState: Int {
+        get {
+            return calculateGameState()
+        }
+    }
     
     // MARK: Methods
     func calculateGameState() -> Int {
@@ -66,7 +70,10 @@ class TicTacToeEngine {
             // Change data
             rawData[x][y] = (currentPlayer)
             
-            endTurn()
+            // Check new game state
+            if calculateGameState() == 0 {
+                endTurn()
+            }
         }
     }
     

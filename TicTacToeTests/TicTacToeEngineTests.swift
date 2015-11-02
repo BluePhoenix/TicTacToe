@@ -117,15 +117,15 @@ class TicTacToeEngineTests: XCTestCase {
         XCTAssertEqual( t.calculateGameState(), 1 )
     }
     
-//    func testPlayerWins() {
-//        let t = ticTacToeEngine
-//        t.play(0, y: 2)
-//        t.play(1, y: 0)
-//        t.play(1, y: 1)
-//        t.play(1, y: 2)
-//        t.play(2, y: 0)
-//        XCTAssertEqual( t.gameResult().message, "Player 1 wins")
-//    }
+    func testPlayerWins() {
+        let t = ticTacToeEngine
+        t.play(0, y: 2)
+        t.play(1, y: 0)
+        t.play(1, y: 1)
+        t.play(1, y: 2)
+        t.play(2, y: 0)
+        XCTAssertEqual( t.gameResult().message, "Player 1 wins")
+    }
 
     func testPerformanceForWinningData() {
         // This is an example of a performance test case.
