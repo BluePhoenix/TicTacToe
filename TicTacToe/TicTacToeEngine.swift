@@ -12,14 +12,11 @@ import Foundation
 // Since I am learning, I am implementing all this myself
 // However, a good alternative might be https://github.com/scottsievert/swix
 class TicTacToeEngine {
-    var rawData: Array<Array<Int>>
-    var currentPlayerValue = 0
+    internal var rawData: Array<Array<Int>>
+    internal var currentPlayerValue = 0
     var currentPlayer: Int {
         get {
             return currentPlayerValue + 1
-        }
-        set {
-            currentPlayerValue = (newValue - 1)
         }
     }
     
