@@ -33,8 +33,7 @@ class TicTacToeEngine {
         // Change data
         rawData[x][y] = (currentPlayer)
         
-        // Change player turn
-        currentPlayerValue = (currentPlayerValue+1) % 2
+        endTurn()
     }
     
     init() {
@@ -43,5 +42,11 @@ class TicTacToeEngine {
         for var i = 0; i < 3; i++ {
             rawData.append(emptyRow)
         }
+    }
+    
+    // MARK: Helper functions
+    func endTurn() {
+        // Change player turn
+        currentPlayerValue = (currentPlayerValue+1) % 2
     }
 }
