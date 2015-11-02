@@ -86,11 +86,13 @@ class TicTacToeEngine {
                 if rawData[0][2] == playerValue {
                     return true
                 }
-            } else if rawData[1][0] == playerValue {
+            }
+            if rawData[1][0] == playerValue {
                 if rawData[2][0] == playerValue {
                     return true
                 }
-            } else if  rawData[1][1] == playerValue {
+            }
+            if  rawData[1][1] == playerValue {
                 if rawData[2][2] == playerValue {
                     return true
                 }
@@ -110,7 +112,8 @@ class TicTacToeEngine {
                 if rawData[0][2] == playerValue {
                     return true
                 }
-            } else if rawData[2][1] == playerValue {
+            }
+            if rawData[2][1] == playerValue {
                 if rawData[2][2] == playerValue {
                     return true
                 }
