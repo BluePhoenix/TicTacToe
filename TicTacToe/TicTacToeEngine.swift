@@ -13,19 +13,28 @@ import Foundation
 // However, a good alternative might be https://github.com/scottsievert/swix
 class TicTacToeEngine {
     var rawData: Array<Array<Int>>
-    var currentPlayer = 0
+    var currentPlayerValue = 0
+    var currentPlayer: Int {
+        get {
+            return currentPlayerValue + 1
+        }
+        set {
+            currentPlayerValue = (newValue - 1)
+        }
+    }
+    
     var currentPlayerText: String {
         get {
-            return "Player \(currentPlayer + 1)'s turn"
+            return "Player \(currentPlayer)'s turn"
         }
     }
     
     func play(x: Int, y: Int) {
         // Change data
-        rawData[x][y] = (currentPlayer + 1)
+        rawData[x][y] = (currentPlayer)
         
         // Change player turn
-        currentPlayer = (currentPlayer+1) % 2
+        currentPlayerValue = (currentPlayerValue+1) % 2
     }
     
     init() {
