@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var ticTacToeButtons: [UIButton]!
+    
+    let ticTacToeEngine = TicTacToeEngine()
 
     override func viewDidLoad() {
         super.viewDidLoad()
