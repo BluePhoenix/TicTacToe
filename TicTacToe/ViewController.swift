@@ -20,7 +20,6 @@ class ViewController: UIViewController {
         
         var i = 0
         for button in ticTacToeButtons {
-            button.tag = i
             button.setTitle(" ", forState: .Normal)
             i++
         }
