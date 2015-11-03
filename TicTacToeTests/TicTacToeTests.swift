@@ -38,12 +38,42 @@ class TicTacToeTests: XCTestCase {
     func testViewHasTicTacToeModel() {
         XCTAssertNotNil( viewController.ticTacToeEngine )
     }
+
+    func testViewHas9TaggedButtons() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual( viewController.ticTacToeButtons[0].tag , 0)
+        XCTAssertEqual( viewController.ticTacToeButtons[1].tag , 1)
+        XCTAssertEqual( viewController.ticTacToeButtons[2].tag , 2)
+        XCTAssertEqual( viewController.ticTacToeButtons[3].tag , 3)
+        XCTAssertEqual( viewController.ticTacToeButtons[4].tag , 4)
+        XCTAssertEqual( viewController.ticTacToeButtons[5].tag , 5)
+        XCTAssertEqual( viewController.ticTacToeButtons[6].tag , 6)
+        XCTAssertEqual( viewController.ticTacToeButtons[7].tag , 7)
+        XCTAssertEqual( viewController.ticTacToeButtons[8].tag , 8)
+    }
     
-//    func testViewHas9TaggedButtons() {
-//        // This is an example of a functional test case.
-//        // Use XCTAssert and related functions to verify your tests produce the correct results.
-//        XCTAssertNotNil( viewController.ticTacToeButtons )
+    func testButtonTitlesAreEmpty() {
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertEqual( viewController.ticTacToeButtons[0].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[1].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[2].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[3].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[4].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[5].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[6].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[7].titleLabel?.text , " ")
+        XCTAssertEqual( viewController.ticTacToeButtons[8].titleLabel?.text , " ")
+    }
+    
+//    func testTicTacToeButtonPress() {
+//        let button = viewController.ticTacToeButtons[0]
+//        XCTAssertEqual( viewController.ticTacToeEngine.currentTurn, 0 )
+//        viewController.ticTacToeButtonTouched(button)
+//        XCTAssertEqual( viewController.ticTacToeEngine.currentTurn, 1 )
 //    }
+    
     
     func testPerformanceExample() {
         // This is an example of a performance test case.

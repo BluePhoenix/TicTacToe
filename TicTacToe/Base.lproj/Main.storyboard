@@ -25,21 +25,18 @@
                                     <constraint firstAttribute="width" secondItem="0Zw-Hq-yUM" secondAttribute="height" multiplier="1:1" id="dxu-ZD-e6o"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKk-Aa-wiK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fO-cy-eHD">
                                 <rect key="frame" x="182" y="173" width="46" height="46"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6fO-cy-eHD" secondAttribute="height" multiplier="1:1" id="pi7-au-PB1"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kj-Lz-XVR">
                                 <rect key="frame" x="236" y="173" width="46" height="46"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="0kj-Lz-XVR" secondAttribute="height" multiplier="1:1" id="hEC-qy-HQR"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOQ-oN-1bV">
@@ -61,9 +58,6 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-3E-PLH">
                                 <rect key="frame" x="128" y="281" width="46" height="46"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="aLm-3E-PLH" secondAttribute="height" multiplier="1:1" id="j39-Qg-eSz"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gJ-Q2-ATa">
@@ -77,9 +71,6 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-Ra-OBC">
                                 <rect key="frame" x="236" y="281" width="46" height="46"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="VgQ-Ra-OBC" secondAttribute="height" multiplier="1:1" id="tnh-ar-dgD"/>
-                                </constraints>
                                 <state key="normal" title="Button"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-DF-lzO">
@@ -94,28 +85,22 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9gJ-Q2-ATa" firstAttribute="width" secondItem="9gJ-Q2-ATa" secondAttribute="height" multiplier="1:1" id="04P-gG-kDp"/>
-                            <constraint firstItem="0kj-Lz-XVR" firstAttribute="width" secondItem="0kj-Lz-XVR" secondAttribute="height" multiplier="1:1" id="1fu-fw-1hg"/>
-                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="width" secondItem="VgQ-Ra-OBC" secondAttribute="height" multiplier="1:1" id="2J6-rH-X2u"/>
-                            <constraint firstItem="0ze-i1-0vR" firstAttribute="width" secondItem="0ze-i1-0vR" secondAttribute="height" multiplier="1:1" id="7bg-lZ-Acs"/>
-                            <constraint firstItem="9gJ-Q2-ATa" firstAttribute="width" secondItem="9gJ-Q2-ATa" secondAttribute="height" multiplier="1:1" id="E9i-jc-P2s"/>
                             <constraint firstItem="aLm-3E-PLH" firstAttribute="width" secondItem="aLm-3E-PLH" secondAttribute="height" multiplier="1:1" id="F3W-3R-i86"/>
-                            <constraint firstItem="0ze-i1-0vR" firstAttribute="width" secondItem="0ze-i1-0vR" secondAttribute="height" multiplier="1:1" id="FvX-0Z-TpW"/>
                             <constraint firstItem="6fO-cy-eHD" firstAttribute="width" secondItem="6fO-cy-eHD" secondAttribute="height" multiplier="1:1" id="GnH-AE-iiI"/>
-                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="width" secondItem="VgQ-Ra-OBC" secondAttribute="height" multiplier="1:1" id="ICe-EZ-YmP"/>
-                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="width" secondItem="VgQ-Ra-OBC" secondAttribute="height" multiplier="1:1" id="ObL-Ep-oTZ"/>
-                            <constraint firstItem="zUi-DF-lzO" firstAttribute="width" secondItem="zUi-DF-lzO" secondAttribute="height" multiplier="1:1" id="Ty4-E6-8kY"/>
                             <constraint firstItem="0kj-Lz-XVR" firstAttribute="width" secondItem="0kj-Lz-XVR" secondAttribute="height" multiplier="1:1" id="WOT-Pi-GXz"/>
-                            <constraint firstItem="9gJ-Q2-ATa" firstAttribute="width" secondItem="9gJ-Q2-ATa" secondAttribute="height" multiplier="1:1" id="b4r-lI-IrM"/>
-                            <constraint firstItem="zUi-DF-lzO" firstAttribute="width" secondItem="zUi-DF-lzO" secondAttribute="height" multiplier="1:1" id="dt2-i3-P7a"/>
-                            <constraint firstItem="aLm-3E-PLH" firstAttribute="width" secondItem="aLm-3E-PLH" secondAttribute="height" multiplier="1:1" id="jZC-IP-yaL"/>
                             <constraint firstItem="VgQ-Ra-OBC" firstAttribute="width" secondItem="VgQ-Ra-OBC" secondAttribute="height" multiplier="1:1" id="lTj-mf-iG2"/>
-                            <constraint firstItem="KOQ-oN-1bV" firstAttribute="width" secondItem="KOQ-oN-1bV" secondAttribute="height" multiplier="1:1" id="v8B-iJ-FDw"/>
-                            <constraint firstItem="0ze-i1-0vR" firstAttribute="width" secondItem="0ze-i1-0vR" secondAttribute="height" multiplier="1:1" id="xch-mW-XLP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outletCollection property="ticTacToeButtons" destination="0Zw-Hq-yUM" collectionClass="NSMutableArray" id="WVg-xo-Hi6"/>
+                        <outletCollection property="ticTacToeButtons" destination="6fO-cy-eHD" collectionClass="NSMutableArray" id="lr5-Ky-r98"/>
+                        <outletCollection property="ticTacToeButtons" destination="0kj-Lz-XVR" collectionClass="NSMutableArray" id="lFh-JZ-HRe"/>
+                        <outletCollection property="ticTacToeButtons" destination="KOQ-oN-1bV" collectionClass="NSMutableArray" id="Kw4-ey-G6N"/>
+                        <outletCollection property="ticTacToeButtons" destination="zUi-DF-lzO" collectionClass="NSMutableArray" id="NaA-89-tdp"/>
+                        <outletCollection property="ticTacToeButtons" destination="0ze-i1-0vR" collectionClass="NSMutableArray" id="3dF-3B-1tU"/>
+                        <outletCollection property="ticTacToeButtons" destination="aLm-3E-PLH" collectionClass="NSMutableArray" id="QHA-0p-4fh"/>
+                        <outletCollection property="ticTacToeButtons" destination="9gJ-Q2-ATa" collectionClass="NSMutableArray" id="Fnp-QW-3kC"/>
+                        <outletCollection property="ticTacToeButtons" destination="VgQ-Ra-OBC" collectionClass="NSMutableArray" id="K8O-kq-DGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

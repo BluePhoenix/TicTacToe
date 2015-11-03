@@ -17,6 +17,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        var i = 0
+        for button in ticTacToeButtons {
+            button.tag = i
+            button.setTitle(" ", forState: .Normal)
+            i++
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,6 +31,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func ticTacToeButtonTouched(sender: UIButton) {
+        
+    }
 
 }
 
