@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var ticTacToeButtons: [UIButton]!
 
     override func viewDidLoad() {
         super.viewDidLoad()

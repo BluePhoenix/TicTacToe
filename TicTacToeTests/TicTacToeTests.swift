@@ -11,9 +11,19 @@ import XCTest
 
 class TicTacToeTests: XCTestCase {
     
+    var viewController: ViewController!
+    
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        viewController = storyboard.instantiateInitialViewController() as! ViewController
+        
+        UIApplication.sharedApplication().keyWindow?.rootViewController = viewController
+        
+        // Checks that the view is not nil, and calls the view into existance
+        XCTAssertNotNil(viewController.view)
     }
     
     override func tearDown() {
@@ -21,10 +31,15 @@ class TicTacToeTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testViewHasArrayOfButtons() {
+        XCTAssertNotNil( viewController.ticTacToeButtons )
     }
+    
+//    func testViewHas9TaggedButtons() {
+//        // This is an example of a functional test case.
+//        // Use XCTAssert and related functions to verify your tests produce the correct results.
+//        XCTAssertNotNil( viewController.ticTacToeButtons )
+//    }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
