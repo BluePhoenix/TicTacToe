@@ -27,7 +27,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="X"/>
                                 <connections>
-                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKk-Aa-wiK"/>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4G-r3-bab"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fO-cy-eHD">
@@ -36,6 +36,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="O"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bi9-na-Guq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kj-Lz-XVR">
                                 <rect key="frame" x="387" y="63" width="150" height="150"/>
@@ -43,6 +46,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcH-8a-ds7"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ze-i1-0vR">
                                 <rect key="frame" x="387" y="225" width="150" height="150"/>
@@ -50,6 +56,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="O"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tht-UH-jSV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-3E-PLH">
                                 <rect key="frame" x="63" y="387" width="150" height="150"/>
@@ -57,6 +66,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="O"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2mQ-cS-jje"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gJ-Q2-ATa">
                                 <rect key="frame" x="225" y="387" width="150" height="150"/>
@@ -64,6 +76,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q5Z-cV-5uK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-Ra-OBC">
                                 <rect key="frame" x="387" y="387" width="150" height="150"/>
@@ -71,6 +86,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="O"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vh-0n-BjT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-DF-lzO">
                                 <rect key="frame" x="225" y="225" width="150" height="150"/>
@@ -81,6 +99,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="X"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQj-9a-QsD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOQ-oN-1bV">
                                 <rect key="frame" x="63" y="225" width="150" height="150"/>
@@ -88,6 +109,9 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
                                 <state key="normal" title="O"/>
+                                <connections>
+                                    <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KzM-Oe-zsi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>

@@ -63,6 +63,18 @@ class TicTacToeEngine {
         return 0
     }
     
+    func dataArray() -> Array<Int> {
+        var flatArray = [Int]()
+        
+        for var i = 0; i < 3; i++ {
+            for var j = 0; j < 3; j++ {
+                flatArray.append(rawData[i][j])
+            }
+        }
+        
+        return flatArray
+    }
+    
     func endTurn() {
         // Change player turn
         currentPlayerValue = (currentPlayerValue+1) % 2

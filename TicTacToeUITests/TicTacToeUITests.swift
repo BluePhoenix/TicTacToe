@@ -31,6 +31,21 @@ class TicTacToeUITests: XCTestCase {
     func testExample() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let elementsQuery = XCUIApplication().otherElements.containingType(.Button, identifier:" ")
+        let allButtons = elementsQuery.childrenMatchingType(.Button)
+        let topLeftButton = allButtons.elementBoundByIndex(0)
+        topLeftButton.tap()
+        XCTAssertEqual( topLeftButton.label, "X" )
+        
+        let topRightButton = allButtons.elementBoundByIndex(2)
+        topRightButton.tap()
+        XCTAssertEqual( topRightButton.label, "O" )
+        
+        let bottomLeftButton = allButtons.elementBoundByIndex(6)
+        bottomLeftButton.tap()
+        XCTAssertEqual( bottomLeftButton.label, "X" )
+        
     }
     
 }

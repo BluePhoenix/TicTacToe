@@ -169,6 +169,18 @@ class TicTacToeEngineTests: XCTestCase {
         XCTAssertEqual( t.currentTurn, 1)
     }
 
+    // Will return a 1 dimensional array that can be used to determine the state of each cell
+    func testFlatArray() {
+        let t = ticTacToeEngine
+        t.rawData =
+            [
+                [1, 0, 2],
+                [1, 0, 0],
+                [1, 0, 2]
+        ]
+        XCTAssertEqual( t.dataArray(), [1, 0, 2, 1, 0, 0, 1, 0, 2] )
+    }
+    
     func testPerformanceForWinningData() {
         // This is an example of a performance test case.
         self.measureBlock {
