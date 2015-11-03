@@ -4,6 +4,8 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,77 +20,126 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zw-Hq-yUM">
-                                <rect key="frame" x="128" y="173" width="46" height="46"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Zw-Hq-yUM">
+                                <rect key="frame" x="63" y="63" width="150" height="150"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="0Zw-Hq-yUM" secondAttribute="height" multiplier="1:1" id="dxu-ZD-e6o"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wKk-Aa-wiK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fO-cy-eHD">
-                                <rect key="frame" x="182" y="173" width="46" height="46"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fO-cy-eHD">
+                                <rect key="frame" x="225" y="63" width="150" height="150"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="O"/>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kj-Lz-XVR">
-                                <rect key="frame" x="236" y="173" width="46" height="46"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kj-Lz-XVR">
+                                <rect key="frame" x="387" y="63" width="150" height="150"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="X"/>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOQ-oN-1bV">
-                                <rect key="frame" x="128" y="227" width="46" height="46"/>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ze-i1-0vR">
+                                <rect key="frame" x="387" y="225" width="150" height="150"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="KOQ-oN-1bV" secondAttribute="height" multiplier="1:1" id="1M0-rY-wdZ"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="O"/>
                             </button>
-                            <button opaque="NO" tag="5" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ze-i1-0vR">
-                                <rect key="frame" x="236" y="227" width="46" height="46"/>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-3E-PLH">
+                                <rect key="frame" x="63" y="387" width="150" height="150"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="0ze-i1-0vR" secondAttribute="height" multiplier="1:1" id="Gvl-V2-HB2"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="O"/>
                             </button>
-                            <button opaque="NO" tag="6" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-3E-PLH">
-                                <rect key="frame" x="128" y="281" width="46" height="46"/>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gJ-Q2-ATa">
+                                <rect key="frame" x="225" y="387" width="150" height="150"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="X"/>
                             </button>
-                            <button opaque="NO" tag="7" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9gJ-Q2-ATa">
-                                <rect key="frame" x="182" y="281" width="46" height="46"/>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-Ra-OBC">
+                                <rect key="frame" x="387" y="387" width="150" height="150"/>
                                 <animations/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="9gJ-Q2-ATa" secondAttribute="height" multiplier="1:1" id="2hi-ET-9TM"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="O"/>
                             </button>
-                            <button opaque="NO" tag="8" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgQ-Ra-OBC">
-                                <rect key="frame" x="236" y="281" width="46" height="46"/>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-DF-lzO">
+                                <rect key="frame" x="225" y="225" width="150" height="150"/>
                                 <animations/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUi-DF-lzO">
-                                <rect key="frame" x="182" y="227" width="46" height="46"/>
-                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="zUi-DF-lzO" secondAttribute="height" multiplier="1:1" id="Wvi-fY-Ykv"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="X"/>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOQ-oN-1bV">
+                                <rect key="frame" x="63" y="225" width="150" height="150"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="90"/>
+                                <state key="normal" title="O"/>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aLm-3E-PLH" firstAttribute="width" secondItem="aLm-3E-PLH" secondAttribute="height" multiplier="1:1" id="F3W-3R-i86"/>
-                            <constraint firstItem="6fO-cy-eHD" firstAttribute="width" secondItem="6fO-cy-eHD" secondAttribute="height" multiplier="1:1" id="GnH-AE-iiI"/>
-                            <constraint firstItem="0kj-Lz-XVR" firstAttribute="width" secondItem="0kj-Lz-XVR" secondAttribute="height" multiplier="1:1" id="WOT-Pi-GXz"/>
-                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="width" secondItem="VgQ-Ra-OBC" secondAttribute="height" multiplier="1:1" id="lTj-mf-iG2"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="VgQ-Ra-OBC" secondAttribute="trailing" constant="11" id="20l-fD-ZYS"/>
+                            <constraint firstItem="KOQ-oN-1bV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="2bM-sf-xkU"/>
+                            <constraint firstItem="0Zw-Hq-yUM" firstAttribute="trailing" secondItem="KOQ-oN-1bV" secondAttribute="trailing" id="5kB-qL-5EV"/>
+                            <constraint firstItem="0ze-i1-0vR" firstAttribute="top" secondItem="zUi-DF-lzO" secondAttribute="top" id="6ew-Rb-1bK"/>
+                            <constraint firstItem="KOQ-oN-1bV" firstAttribute="top" secondItem="0Zw-Hq-yUM" secondAttribute="bottom" constant="12" id="7ah-v2-DcP"/>
+                            <constraint firstItem="zUi-DF-lzO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" priority="750" id="CrF-jU-Px4"/>
+                            <constraint firstItem="0kj-Lz-XVR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="Czq-fg-Poi"/>
+                            <constraint firstItem="aLm-3E-PLH" firstAttribute="height" secondItem="9gJ-Q2-ATa" secondAttribute="height" id="FA8-9H-riG"/>
+                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="trailing" secondItem="0ze-i1-0vR" secondAttribute="trailing" id="GU8-wO-HVA"/>
+                            <constraint firstItem="0Zw-Hq-yUM" firstAttribute="height" secondItem="6fO-cy-eHD" secondAttribute="height" id="HLP-Gj-Ped"/>
+                            <constraint firstItem="6fO-cy-eHD" firstAttribute="leading" secondItem="zUi-DF-lzO" secondAttribute="leading" id="Hj2-t6-ws8"/>
+                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="leading" secondItem="0ze-i1-0vR" secondAttribute="leading" id="I6t-c7-cBF"/>
+                            <constraint firstItem="0kj-Lz-XVR" firstAttribute="height" secondItem="6fO-cy-eHD" secondAttribute="height" id="IY3-ZN-kqo"/>
+                            <constraint firstItem="9gJ-Q2-ATa" firstAttribute="trailing" secondItem="zUi-DF-lzO" secondAttribute="trailing" id="J6c-xj-xnY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="VgQ-Ra-OBC" secondAttribute="bottom" constant="32" id="JhY-8H-wtL"/>
+                            <constraint firstItem="zUi-DF-lzO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="MzA-Ua-gbH"/>
+                            <constraint firstItem="KOQ-oN-1bV" firstAttribute="width" secondItem="zUi-DF-lzO" secondAttribute="width" id="OjJ-Jb-Tv1"/>
+                            <constraint firstItem="0Zw-Hq-yUM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="Qbk-LG-Tua"/>
+                            <constraint firstItem="zUi-DF-lzO" firstAttribute="top" secondItem="6fO-cy-eHD" secondAttribute="bottom" constant="12" id="RKc-m0-Vhj"/>
+                            <constraint firstItem="aLm-3E-PLH" firstAttribute="trailing" secondItem="KOQ-oN-1bV" secondAttribute="trailing" id="SaH-lL-hCj"/>
+                            <constraint firstItem="9gJ-Q2-ATa" firstAttribute="top" secondItem="zUi-DF-lzO" secondAttribute="bottom" constant="12" id="Srp-R9-5zH"/>
+                            <constraint firstItem="zUi-DF-lzO" firstAttribute="top" secondItem="KOQ-oN-1bV" secondAttribute="top" id="Uyc-sZ-Aac"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aLm-3E-PLH" secondAttribute="bottom" constant="32" id="W6Y-jY-aeR"/>
+                            <constraint firstItem="aLm-3E-PLH" firstAttribute="leading" secondItem="KOQ-oN-1bV" secondAttribute="leading" id="XWN-th-R3L"/>
+                            <constraint firstItem="6fO-cy-eHD" firstAttribute="trailing" secondItem="zUi-DF-lzO" secondAttribute="trailing" id="Xag-gg-tuN"/>
+                            <constraint firstItem="0Zw-Hq-yUM" firstAttribute="leading" secondItem="KOQ-oN-1bV" secondAttribute="leading" id="Ymx-Jy-x5o"/>
+                            <constraint firstItem="0ze-i1-0vR" firstAttribute="width" secondItem="zUi-DF-lzO" secondAttribute="width" id="bwx-X5-UEk"/>
+                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="top" secondItem="0ze-i1-0vR" secondAttribute="bottom" constant="12" id="dJC-we-UvP"/>
+                            <constraint firstItem="6fO-cy-eHD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="dT2-Ff-cbW"/>
+                            <constraint firstItem="aLm-3E-PLH" firstAttribute="top" secondItem="KOQ-oN-1bV" secondAttribute="bottom" constant="12" id="gLO-Du-2dW"/>
+                            <constraint firstItem="0Zw-Hq-yUM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="jz3-QS-kt9"/>
+                            <constraint firstItem="0ze-i1-0vR" firstAttribute="top" secondItem="0kj-Lz-XVR" secondAttribute="bottom" constant="12" id="mA4-0R-2wV"/>
+                            <constraint firstItem="zUi-DF-lzO" firstAttribute="bottom" secondItem="KOQ-oN-1bV" secondAttribute="bottom" id="mp3-6n-AeK"/>
+                            <constraint firstItem="0ze-i1-0vR" firstAttribute="leading" secondItem="zUi-DF-lzO" secondAttribute="trailing" constant="12" id="mvI-Ri-esq"/>
+                            <constraint firstItem="0kj-Lz-XVR" firstAttribute="leading" secondItem="0ze-i1-0vR" secondAttribute="leading" id="nQC-WU-jgu"/>
+                            <constraint firstItem="zUi-DF-lzO" firstAttribute="leading" secondItem="KOQ-oN-1bV" secondAttribute="trailing" constant="12" id="pLs-M2-eGf"/>
+                            <constraint firstItem="9gJ-Q2-ATa" firstAttribute="leading" secondItem="zUi-DF-lzO" secondAttribute="leading" id="pQP-3s-nKl"/>
+                            <constraint firstItem="9gJ-Q2-ATa" firstAttribute="height" secondItem="zUi-DF-lzO" secondAttribute="height" id="plR-n0-bWX"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="0ze-i1-0vR" secondAttribute="trailing" constant="11" id="qac-tw-N97"/>
+                            <constraint firstItem="0kj-Lz-XVR" firstAttribute="trailing" secondItem="0ze-i1-0vR" secondAttribute="trailing" id="sXe-05-uUD"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="0kj-Lz-XVR" secondAttribute="trailing" constant="11" id="sZs-B8-S3j"/>
+                            <constraint firstItem="VgQ-Ra-OBC" firstAttribute="height" secondItem="9gJ-Q2-ATa" secondAttribute="height" id="uWu-FW-xF8"/>
+                            <constraint firstItem="aLm-3E-PLH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="vOi-22-eo2"/>
+                            <constraint firstItem="zUi-DF-lzO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vlj-cB-rKE"/>
+                            <constraint firstItem="6fO-cy-eHD" firstAttribute="height" secondItem="zUi-DF-lzO" secondAttribute="height" id="vzn-OZ-ddc"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="9gJ-Q2-ATa" secondAttribute="bottom" constant="32" id="yjT-XO-6N9"/>
+                            <constraint firstItem="0ze-i1-0vR" firstAttribute="bottom" secondItem="zUi-DF-lzO" secondAttribute="bottom" id="ynk-Ob-GR1"/>
                         </constraints>
                     </view>
                     <connections>
