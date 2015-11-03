@@ -28,6 +28,7 @@ class TicTacToeEngineTests: XCTestCase {
         let expectedData = Array(count: 3, repeatedValue: defaultRow)
         XCTAssertEqual( ticTacToeEngine.rawData, expectedData)
         XCTAssertEqual( ticTacToeEngine.currentPlayerText, "Player 1's turn")
+        XCTAssertEqual( ticTacToeEngine.currentTurn, 0)
     }
     
     func testRawDataChangesOnPlays() {
@@ -75,6 +76,7 @@ class TicTacToeEngineTests: XCTestCase {
         XCTAssertEqual( String(t.rawData), String([ [0, 0, 0], [0, 0, 0], [0, 0, 0] ]) )
         XCTAssertEqual( t.currentPlayerValue, 0)
         XCTAssertEqual( t.gameState, 0)
+        XCTAssertEqual( t.currentTurn, 0)
     }
     
     func testVictoryCondition() {
@@ -157,6 +159,14 @@ class TicTacToeEngineTests: XCTestCase {
         t.play(1, y: 2)
         t.play(2, y: 2)
         XCTAssertEqual( t.gameResult().message, "Players tied")
+    }
+    
+    func testCannotPlayOutsideOfBounds() {
+        let t = ticTacToeEngine
+        t.play(1, y: 1)
+        XCTAssertEqual( t.currentTurn, 1)
+        t.play(4, y: 2)
+        XCTAssertEqual( t.currentTurn, 1)
     }
 
     func testPerformanceForWinningData() {

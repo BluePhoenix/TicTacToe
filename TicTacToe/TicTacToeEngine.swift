@@ -80,6 +80,12 @@ class TicTacToeEngine {
     }
     
     func play(x: Int, y: Int) {
+        
+        // Only allow plays within the grid
+        guard 0...2 ~= x && 0...2 ~= y else {
+            return
+        }
+        
         // Only accept valid plays, cannot change the value of the same cell
         if rawData[x][y] == 0 {
             // Change data
