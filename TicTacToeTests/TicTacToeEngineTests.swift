@@ -168,6 +168,22 @@ class TicTacToeEngineTests: XCTestCase {
         t.play(4, y: 2)
         XCTAssertEqual( t.currentTurn, 1)
     }
+    
+    func testCannotPlayAfterWinning() {
+        let t = ticTacToeEngine
+        t.play(0, y: 0)
+        t.play(0, y: 1)
+        t.play(0, y: 2)
+        t.play(1, y: 0)
+        t.play(1, y: 1)
+        t.play(1, y: 2)
+        t.play(2, y: 0)
+        XCTAssertEqual( t.gameResult().message, "Player 1 wins")
+        XCTAssertEqual( t.currentTurn, 7 )
+        t.play(2, y: 1)
+        XCTAssertEqual( t.gameResult().message, "Player 1 wins")
+        XCTAssertEqual( t.currentTurn, 7 )
+    }
 
     // Will return a 1 dimensional array that can be used to determine the state of each cell
     func testFlatArray() {

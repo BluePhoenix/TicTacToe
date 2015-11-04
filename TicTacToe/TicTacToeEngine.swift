@@ -98,6 +98,11 @@ class TicTacToeEngine {
             return
         }
         
+        // Only allow plays when game is not tied or won
+        guard gameState == 0 else {
+            return
+        }
+        
         // Only accept valid plays, cannot change the value of the same cell
         if rawData[x][y] == 0 {
             // Change data
