@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet var ticTacToeButtons: [UIButton]!
     @IBOutlet weak var messageLabel: UILabel!
+    @IBOutlet weak var newGameButton: UIButton!
     
     let ticTacToeEngine = TicTacToeEngine()
 
@@ -38,6 +39,7 @@ class ViewController: UIViewController {
         ticTacToeEngine.play(coordinates.x, y: coordinates.y)
         updateButtonLabels()
         updateMessages()
+        updateNewGameButtonVisibility()
     }
     
     // MARK: Helper functions
@@ -83,6 +85,10 @@ class ViewController: UIViewController {
     
     func updateMessages() {
         messageLabel.text = ticTacToeEngine.currentPlayerText
+    }
+    
+    func updateNewGameButtonVisibility() {
+        newGameButton.hidden = (ticTacToeEngine.gameState == 0)
     }
 
 }

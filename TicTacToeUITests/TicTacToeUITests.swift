@@ -30,6 +30,7 @@ class TicTacToeUITests: XCTestCase {
     
     func testInitialMessage() {
         XCTAssert( XCUIApplication().staticTexts["Player 1's turn"].exists )
+        XCTAssertFalse( XCUIApplication().buttons["New Game"].hittable )
     }
     
     func testTappingSomeItems() {
@@ -66,6 +67,7 @@ class TicTacToeUITests: XCTestCase {
         allButtons.elementBoundByIndex(6).tap()
         
         XCTAssert( app.staticTexts["Player 1 wins"].exists )
+        XCTAssert( XCUIApplication().buttons["New Game"].hittable )
     }
     
 }

@@ -129,6 +129,12 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FMw-bf-Zz4">
+                                <rect key="frame" x="251" y="555" width="99" height="36"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="New Game"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.75559091570000003" green="0.75556838510000002" blue="0.75558114050000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -138,6 +144,8 @@
                             <constraint firstItem="0Zw-Hq-yUM" firstAttribute="trailing" secondItem="KOQ-oN-1bV" secondAttribute="trailing" id="5kB-qL-5EV"/>
                             <constraint firstItem="0ze-i1-0vR" firstAttribute="top" secondItem="zUi-DF-lzO" secondAttribute="top" id="6ew-Rb-1bK"/>
                             <constraint firstItem="KOQ-oN-1bV" firstAttribute="top" secondItem="0Zw-Hq-yUM" secondAttribute="bottom" constant="12" id="7ah-v2-DcP"/>
+                            <constraint firstItem="FMw-bf-Zz4" firstAttribute="top" secondItem="9gJ-Q2-ATa" secondAttribute="bottom" constant="18" id="7dL-yf-g3F"/>
+                            <constraint firstItem="FMw-bf-Zz4" firstAttribute="centerX" secondItem="9gJ-Q2-ATa" secondAttribute="centerX" id="Aut-x4-JWB"/>
                             <constraint firstItem="zUi-DF-lzO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:4" priority="750" id="CrF-jU-Px4"/>
                             <constraint firstItem="0kj-Lz-XVR" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="Czq-fg-Poi"/>
                             <constraint firstItem="aLm-3E-PLH" firstAttribute="height" secondItem="9gJ-Q2-ATa" secondAttribute="height" id="FA8-9H-riG"/>
@@ -186,6 +194,7 @@
                     </view>
                     <connections>
                         <outlet property="messageLabel" destination="COf-sQ-DKu" id="R2S-aY-Np8"/>
+                        <outlet property="newGameButton" destination="FMw-bf-Zz4" id="a8k-Mi-yeP"/>
                         <outletCollection property="ticTacToeButtons" destination="0Zw-Hq-yUM" collectionClass="NSMutableArray" id="WVg-xo-Hi6"/>
                         <outletCollection property="ticTacToeButtons" destination="6fO-cy-eHD" collectionClass="NSMutableArray" id="lr5-Ky-r98"/>
                         <outletCollection property="ticTacToeButtons" destination="0kj-Lz-XVR" collectionClass="NSMutableArray" id="lFh-JZ-HRe"/>
