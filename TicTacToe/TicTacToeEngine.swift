@@ -24,7 +24,7 @@ class TicTacToeEngine {
     
     var currentPlayerText: String {
         get {
-            return "Player \(currentPlayer)'s turn"
+            return gameResult().message
         }
     }
     
@@ -87,7 +87,7 @@ class TicTacToeEngine {
         case 2:
             return (state: gameState, message: "Players tied")
         default:
-            return (state: gameState, message: "Currently playing")
+            return (state: gameState, message: "Player \(currentPlayer)'s turn")
         }
     }
     

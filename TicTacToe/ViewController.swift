@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet var ticTacToeButtons: [UIButton]!
+    @IBOutlet weak var messageLabel: UILabel!
     
     let ticTacToeEngine = TicTacToeEngine()
 
@@ -23,6 +24,8 @@ class ViewController: UIViewController {
             button.setTitle(" ", forState: .Normal)
             i++
         }
+        
+        updateMessages()
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +37,7 @@ class ViewController: UIViewController {
         let coordinates = mapTagToXY(sender.tag)
         ticTacToeEngine.play(coordinates.x, y: coordinates.y)
         updateButtonLabels()
+        updateMessages()
     }
     
     // MARK: Helper functions
@@ -75,6 +79,10 @@ class ViewController: UIViewController {
             }
             ticTacToeButtons[i].setTitle(titleString, forState: .Normal)
         }
+    }
+    
+    func updateMessages() {
+        messageLabel.text = ticTacToeEngine.currentPlayerText
     }
 
 }

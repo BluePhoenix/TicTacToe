@@ -28,6 +28,10 @@ class TicTacToeUITests: XCTestCase {
         super.tearDown()
     }
     
+    func testInitialMessage() {
+        XCTAssert( XCUIApplication().staticTexts["Player 1's turn"].exists )
+    }
+    
     func testTappingSomeItems() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
@@ -46,6 +50,22 @@ class TicTacToeUITests: XCTestCase {
         bottomLeftButton.tap()
         XCTAssertEqual( bottomLeftButton.label, "X" )
         
+    }
+    
+    func testPlayerWins() {
+        let app = XCUIApplication()
+        let elementsQuery = app.otherElements.containingType(.Button, identifier: " ")
+        let allButtons = elementsQuery.childrenMatchingType(.Button)
+        
+        allButtons.elementBoundByIndex(0).tap()
+        allButtons.elementBoundByIndex(1).tap()
+        allButtons.elementBoundByIndex(2).tap()
+        allButtons.elementBoundByIndex(3).tap()
+        allButtons.elementBoundByIndex(4).tap()
+        allButtons.elementBoundByIndex(5).tap()
+        allButtons.elementBoundByIndex(6).tap()
+        
+        XCTAssert( app.staticTexts["Player 1 wins"].exists )
     }
     
 }

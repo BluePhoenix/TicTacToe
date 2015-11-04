@@ -67,14 +67,6 @@ class TicTacToeTests: XCTestCase {
         XCTAssertEqual( viewController.ticTacToeButtons[8].titleLabel?.text , " ")
     }
     
-//    func testTicTacToeButtonPress() {
-//        let button = viewController.ticTacToeButtons[0]
-//        XCTAssertEqual( viewController.ticTacToeEngine.currentTurn, 0 )
-//        viewController.ticTacToeButtonTouched(button)
-//        XCTAssertEqual( viewController.ticTacToeEngine.currentTurn, 1 )
-//    }
-    
-    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
