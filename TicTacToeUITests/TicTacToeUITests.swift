@@ -67,7 +67,53 @@ class TicTacToeUITests: XCTestCase {
         allButtons.elementBoundByIndex(6).tap()
         
         XCTAssert( app.staticTexts["Player 1 wins"].exists )
-        XCTAssert( XCUIApplication().buttons["New Game"].hittable )
+        XCTAssert( app.buttons["New Game"].hittable )
+    }
+    
+    func testPlayersTie() {
+        let app = XCUIApplication()
+        let elementsQuery = app.otherElements.containingType(.Button, identifier: " ")
+        let allButtons = elementsQuery.childrenMatchingType(.Button)
+        
+        allButtons.elementBoundByIndex(0).tap()
+        allButtons.elementBoundByIndex(1).tap()
+        allButtons.elementBoundByIndex(2).tap()
+        allButtons.elementBoundByIndex(3).tap()
+        allButtons.elementBoundByIndex(4).tap()
+        allButtons.elementBoundByIndex(5).tap()
+        allButtons.elementBoundByIndex(7).tap()
+        allButtons.elementBoundByIndex(6).tap()
+        allButtons.elementBoundByIndex(8).tap()
+        
+        XCTAssert( app.staticTexts["Players tied"].exists )
+        XCTAssert( app.buttons["New Game"].hittable )
+    }
+    
+    func testPlayersStartANewGame() {
+        let app = XCUIApplication()
+        let elementsQuery = app.otherElements.containingType(.Button, identifier: " ")
+        let allButtons = elementsQuery.childrenMatchingType(.Button)
+        
+        allButtons.elementBoundByIndex(0).tap()
+        allButtons.elementBoundByIndex(1).tap()
+        allButtons.elementBoundByIndex(2).tap()
+        allButtons.elementBoundByIndex(3).tap()
+        allButtons.elementBoundByIndex(4).tap()
+        allButtons.elementBoundByIndex(5).tap()
+        allButtons.elementBoundByIndex(7).tap()
+        allButtons.elementBoundByIndex(6).tap()
+        allButtons.elementBoundByIndex(8).tap()
+        
+        XCTAssert( app.staticTexts["Players tied"].exists )
+        XCTAssert( app.buttons["New Game"].hittable )
+        
+        app.buttons["New Game"].tap()
+        
+        XCTAssert( XCUIApplication().staticTexts["Player 1's turn"].exists )
+        XCTAssertFalse( app.buttons["New Game"].hittable )
+        
+        let blankButtons = allButtons.matchingIdentifier(" ")
+        XCTAssertEqual( blankButtons.count, 9 )
     }
     
 }

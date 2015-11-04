@@ -40,6 +40,11 @@ class ViewController: UIViewController {
         updateElements()
     }
     
+    @IBAction func newGameTouched(sender: AnyObject) {
+        ticTacToeEngine.reset()
+        updateElements()
+    }
+    
     // MARK: Helper functions
     func mapTagToXY(tag: Int) -> (x: Int, y: Int) {
         let result: (x: Int, y: Int)
