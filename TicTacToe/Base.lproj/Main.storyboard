@@ -25,7 +25,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g4G-r3-bab"/>
@@ -36,7 +36,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="O"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bi9-na-Guq"/>
@@ -47,7 +47,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dcH-8a-ds7"/>
@@ -58,7 +58,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="O"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tht-UH-jSV"/>
@@ -69,7 +69,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="O"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2mQ-cS-jje"/>
@@ -80,7 +80,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q5Z-cV-5uK"/>
@@ -91,7 +91,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="O"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vh-0n-BjT"/>
@@ -105,7 +105,7 @@
                                     <constraint firstAttribute="width" secondItem="zUi-DF-lzO" secondAttribute="height" multiplier="1:1" id="Wvi-fY-Ykv"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="X"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XQj-9a-QsD"/>
@@ -116,7 +116,7 @@
                                 <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="100"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.75559091567993164" green="0.75556838512420654" blue="0.75558114051818848" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="O"/>
                                 <connections>
                                     <action selector="ticTacToeButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KzM-Oe-zsi"/>
@@ -131,7 +131,7 @@
                             </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.75559091570000003" green="0.75556838510000002" blue="0.75558114050000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="VgQ-Ra-OBC" secondAttribute="trailing" constant="11" id="20l-fD-ZYS"/>
                             <constraint firstItem="KOQ-oN-1bV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="2bM-sf-xkU"/>
