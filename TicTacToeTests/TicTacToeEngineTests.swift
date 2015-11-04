@@ -117,6 +117,25 @@ class TicTacToeEngineTests: XCTestCase {
                 [1, 2, 2]
         ]
         XCTAssertEqual( t.calculateGameState(), 1 )
+        
+        t.rawData =
+            [
+                [2, 1, 2],
+                [1, 2, 2],
+                [1, 1, 1]
+        ]
+        XCTAssertEqual( t.calculateGameState(), 1 )
+    }
+    
+    func testTiedConditions() {
+        let t = ticTacToeEngine
+        t.rawData =
+            [
+                [1, 2, 1],
+                [1, 1, 2],
+                [2, 1, 2]
+        ]
+        XCTAssertEqual( t.calculateGameState(), 2 )
     }
     
     func testPlayerWins() {

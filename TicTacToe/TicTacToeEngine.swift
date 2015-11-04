@@ -53,11 +53,11 @@ class TicTacToeEngine {
     
     // MARK: Methods
     func calculateGameState() -> Int {
-        if currentTurn >= 9 {
-            return 2
-        }
         if checkVictoryOfPlayer(1) || checkVictoryOfPlayer(2) {
             return 1
+        }
+        if currentTurn >= 9 {
+            return 2
         }
         
         return 0

@@ -123,9 +123,9 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1's turn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COf-sQ-DKu">
-                                <rect key="frame" x="236" y="17" width="129" height="24"/>
+                                <rect key="frame" x="237" y="5" width="126" height="36"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -133,6 +133,7 @@
                                 <rect key="frame" x="251" y="555" width="99" height="36"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <state key="normal" title="New Game"/>
                                 <connections>
                                     <action selector="newGameTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hML-YB-dvf"/>
@@ -175,6 +176,7 @@
                             <constraint firstItem="6fO-cy-eHD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="dT2-Ff-cbW"/>
                             <constraint firstItem="COf-sQ-DKu" firstAttribute="centerX" secondItem="zUi-DF-lzO" secondAttribute="centerX" id="ehJ-CH-Ao9"/>
                             <constraint firstItem="aLm-3E-PLH" firstAttribute="top" secondItem="KOQ-oN-1bV" secondAttribute="bottom" constant="12" id="gLO-Du-2dW"/>
+                            <constraint firstItem="COf-sQ-DKu" firstAttribute="height" secondItem="FMw-bf-Zz4" secondAttribute="height" id="hFk-f1-gVs"/>
                             <constraint firstItem="0Zw-Hq-yUM" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="jz3-QS-kt9"/>
                             <constraint firstItem="0ze-i1-0vR" firstAttribute="top" secondItem="0kj-Lz-XVR" secondAttribute="bottom" constant="12" id="mA4-0R-2wV"/>
                             <constraint firstItem="zUi-DF-lzO" firstAttribute="bottom" secondItem="KOQ-oN-1bV" secondAttribute="bottom" id="mp3-6n-AeK"/>

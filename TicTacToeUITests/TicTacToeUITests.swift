@@ -78,12 +78,12 @@ class TicTacToeUITests: XCTestCase {
         allButtons.elementBoundByIndex(0).tap()
         allButtons.elementBoundByIndex(1).tap()
         allButtons.elementBoundByIndex(2).tap()
-        allButtons.elementBoundByIndex(3).tap()
-        allButtons.elementBoundByIndex(4).tap()
         allButtons.elementBoundByIndex(5).tap()
-        allButtons.elementBoundByIndex(7).tap()
+        allButtons.elementBoundByIndex(4).tap()
         allButtons.elementBoundByIndex(6).tap()
+        allButtons.elementBoundByIndex(3).tap()
         allButtons.elementBoundByIndex(8).tap()
+        allButtons.elementBoundByIndex(7).tap()
         
         XCTAssert( app.staticTexts["Players tied"].exists )
         XCTAssert( app.buttons["New Game"].hittable )
@@ -100,11 +100,10 @@ class TicTacToeUITests: XCTestCase {
         allButtons.elementBoundByIndex(3).tap()
         allButtons.elementBoundByIndex(4).tap()
         allButtons.elementBoundByIndex(5).tap()
-        allButtons.elementBoundByIndex(7).tap()
         allButtons.elementBoundByIndex(6).tap()
+        allButtons.elementBoundByIndex(7).tap()
         allButtons.elementBoundByIndex(8).tap()
         
-        XCTAssert( app.staticTexts["Players tied"].exists )
         XCTAssert( app.buttons["New Game"].hittable )
         
         app.buttons["New Game"].tap()
