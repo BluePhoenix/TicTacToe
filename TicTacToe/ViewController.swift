@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             i++
         }
         
-        updateMessages()
+        updateElements()
     }
 
     override func didReceiveMemoryWarning() {
@@ -37,9 +37,7 @@ class ViewController: UIViewController {
     @IBAction func ticTacToeButtonTouched(sender: UIButton) {
         let coordinates = mapTagToXY(sender.tag)
         ticTacToeEngine.play(coordinates.x, y: coordinates.y)
-        updateButtonLabels()
-        updateMessages()
-        updateNewGameButtonVisibility()
+        updateElements()
     }
     
     // MARK: Helper functions
@@ -67,7 +65,7 @@ class ViewController: UIViewController {
         return result
     }
     
-    func updateButtonLabels() {
+    func updateElements() {
         let buttonStates = ticTacToeEngine.dataArray()
         for var i = 0; i < ticTacToeButtons.count; i++ {
             let titleString: String
@@ -81,14 +79,11 @@ class ViewController: UIViewController {
             }
             ticTacToeButtons[i].setTitle(titleString, forState: .Normal)
         }
-    }
-    
-    func updateMessages() {
+        
+        // Update message and update visibility of new game button
         messageLabel.text = ticTacToeEngine.currentPlayerText
-    }
-    
-    func updateNewGameButtonVisibility() {
         newGameButton.hidden = (ticTacToeEngine.gameState == 0)
+
     }
 
 }
